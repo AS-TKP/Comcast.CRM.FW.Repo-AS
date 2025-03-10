@@ -1,6 +1,7 @@
 package gitSampleClasses;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.Random;
@@ -19,7 +20,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class CreateContacts {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Throwable {
 		FileInputStream fis = new FileInputStream("C:\\Users\\anjal\\Desktop\\commondata.properties");
 		Properties Pobj = new Properties();
 		Pobj.load(fis);
@@ -31,7 +32,7 @@ public class CreateContacts {
 	Random rndm = new Random();
 	int RndmInt = rndm.nextInt(1000);
 	//fetch TSD from excel file
-	FileInputStream fis1 = new FileInputStream("C:\\Users\\anjal\\Desktop\\orgdata.xlsx");
+	FileInputStream fis1 = new FileInputStream("C:\\Users\\anjal\\Desktop\\TestScriptData.xlsx");
 	Workbook wb = WorkbookFactory.create(fis1);
 	Sheet sh = wb.getSheet("Org");
 	Row rw = sh.getRow(1);

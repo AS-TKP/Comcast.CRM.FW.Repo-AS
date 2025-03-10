@@ -19,8 +19,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class CreateOrg {
 
-	public static void main(String[] args) throws Exception {
-		//fetch common data from properties file
+	public static void main(String[] args) throws Throwable {
+		
 		FileInputStream fis = new FileInputStream("C:\\Users\\anjal\\Desktop\\commondata.properties");
 		Properties Pobj = new Properties();
 		Pobj.load(fis);
