@@ -19,7 +19,7 @@ public class ProductsPage {
 		driver.findElement(By.linkText("Products")).click();
 		String ProductsPage = driver.getTitle();
 		System.out.println(ProductsPage);
-		//add a new product
+		//add  new product
 		driver.findElement(By.xpath("//img[@src='themes/softed/images/btnL3Add.gif']")).click();
 		driver.findElement(By.name("productname")).sendKeys("popx");
 		driver.findElement(By.xpath("//input[@title='Save [Alt+S]']")).click();
