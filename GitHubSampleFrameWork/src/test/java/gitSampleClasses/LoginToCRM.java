@@ -24,7 +24,7 @@ public class LoginToCRM {
 		else {
 			System.out.println("HomePageTitle tc failed");
 		}
-		driver.quit();
+		driver.close();
 		
 	}
 }

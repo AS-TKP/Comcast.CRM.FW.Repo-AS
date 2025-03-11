@@ -67,5 +67,6 @@ public void logout() {
 	Actions act = new Actions(driver);
 	act.moveToElement(adminImg).click().perform();
 	act.moveToElement(signoutlink).click().perform();
+	
 }
 }
