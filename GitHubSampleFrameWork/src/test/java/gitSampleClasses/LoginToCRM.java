@@ -16,5 +16,15 @@ public class LoginToCRM {
 		driver.findElement(By.name("user_name")).sendKeys("admin");
 		driver.findElement(By.name("user_password")).sendKeys("admin");
 		driver.findElement(By.id("submitButton")).click();
+		String HomePageTitle = driver.getTitle();
+		System.out.println(HomePageTitle);
+		if(HomePageTitle.contains(HomePageTitle)) {
+			System.out.println("HomePageTitle is : "+ HomePageTitle);
+		}
+		else {
+			System.out.println("HomePageTitle tc failed");
+		}
+		driver.quit();
+		
 	}
 }

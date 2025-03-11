@@ -42,8 +42,6 @@ public void loginToApp(String URL, String USERNAME, String PASSWORD) {
     driver.get(URL);
 	usernameEdit.sendKeys(USERNAME);
 	passwordEdit.sendKeys(PASSWORD);
-	loginButton.click();
-
-	
+	loginButton.click();	
 }
 }
