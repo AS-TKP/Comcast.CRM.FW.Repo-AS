@@ -19,6 +19,10 @@ public class ProductsPage {
 		driver.findElement(By.linkText("Products")).click();
 		String ProductsPage = driver.getTitle();
 		System.out.println(ProductsPage);
+		//search a product using product no.
+		driver.findElement(By.name("search_text")).sendKeys("PRO1");
+		driver.findElement(By.name("submit")).click();
+		
 	}
 
 }
